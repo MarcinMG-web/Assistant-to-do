@@ -1,0 +1,129 @@
+html, body 
+{
+    height: 100%;
+}
+
+body
+{
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/tlo.png);
+    /* This patern from www.subtlepatterns.com  */
+    font-family: 'Lato', sans-serif;
+}
+
+/* App container*/
+
+.app-container 
+{    
+    width: 500px;
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(255,255,255, 0.7);
+    box-shadow: 0 0 62px rgb(0 ,0, 0.1);
+    border-radius: 15px;
+}
+
+.rectangle
+{   
+    margin-right: 20px;
+    width: 500px;
+    height: 335px;
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(255,255,255, 0.7);
+    box-shadow: 0 0 62px rgb(0 ,0, 0.1);
+    border-radius: 15px;
+    font-weight: 800;    
+} 
+
+#timer
+{
+    margin-top: 143px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.app-container h3
+{
+    margin: 0 0 25px;
+    font-size: 30px;
+}
+
+input[type = text]
+{
+    width: 360px;
+    background-color:#efefef;
+    color: #666;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+}
+
+input[type=text]:focus
+{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    border: 2px solid #ebb513;
+    color: #000000;
+}
+
+button[type=submit]
+{   
+    min-width: 70px;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #ebb513;
+    color: black;
+    cursor: pointer;
+}
+
+button
+{   
+    min-width: 65px;
+    background-color: #efefef;
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* New task */
+
+.new-task-container
+
+{
+    margin-bottom: 20px;
+}
+
+/* Tasks list */
+
+.tasks-container ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.single-task
+{
+    margin-bottom: 12px;
+}
+
