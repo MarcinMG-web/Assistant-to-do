@@ -1,15 +1,15 @@
-function addNewTask(title) // pobranie tytułu jako parametr
+function addNewTask(title) 
 {
     const taskLi = document.createElement('li'); 
 
-    taskLi.classList.add('single-class'); // doddanie do li classy single-class w css
-    taskLi.innerHTML = prepareTaskHTML(title); // podmianka wewnętrznego html dla stowrzonego zadania ()
-
+    taskLi.classList.add('single-class'); 
+    taskLi.innerHTML = prepareTaskHTML(title); 
         
-    // Event -toggle and delete
+    // Event - toggle and delete
 
-    const toggleCompleteBtn = taskLi.querySelector('.toggle-complete-btn');// przycisk do przełączania zadania wykoannnego
-    const deleteBtn = taskLi.querySelector('.delete-task-btn'); // przycisk do usuwania zadania 
+    const toggleCompleteBtn = taskLi.querySelector('.toggle-complete-btn');
+
+    const deleteBtn = taskLi.querySelector('.delete-task-btn'); 
 
     toggleCompleteBtn.addEventListener('click',function()
     {
@@ -25,8 +25,7 @@ function addNewTask(title) // pobranie tytułu jako parametr
 
     // Add task to DOM
     tasksContainer.appendChild(taskLi);
-   
-    
+      
 }
 
 function prepareTaskHTML(title)
@@ -54,20 +53,18 @@ function bindAddTaskEvents()
         // On submit
         newTaskForm.addEventListener('submit', function(events)
         {
-                events.preventDefault();// zapobiega przeładowaniu sie strony
+                events.preventDefault()
 
                 const title = this.querySelector('input').value;
-
                 
-
-                if (title) // wykona się jeżeli  title będie miał jakś wartość 
+       
+                if (title) 
                 {
                   addNewTask(title);
-                                      
-                 
-                };
-                
-        } ) ;
-        
+                  this.querySelector('input').value = " ";
+                }; 
+        });
+
+   
 }
 

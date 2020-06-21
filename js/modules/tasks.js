@@ -1,8 +1,8 @@
 const tasks = 
 [
-    'Rozpocząć naukę frameworka - React',
-    'Wycieczka do Norwegii',
-    'Dokończyc Projek',
-    'Wycieczka - Świnoujście -> Hel!',
+    'Meetup tomorrow!',
+    'Trip to Norway',
+    'Finish the Project',
+    'Bicycle trip coast ',
        
 ];

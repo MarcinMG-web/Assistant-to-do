@@ -1,9 +1,9 @@
 //Show task
 function showTasks()
 {
-    tasks.forEach(function(title) // przegląd tablicy tasks i wybranie pojedyńczego elementu 
+    tasks.forEach(function(title) 
     {
-        addNewTask(title); // przesłanie tytułu do funkcji addNewTask
+        addNewTask(title); 
         
     }); 
 }
@@ -22,7 +22,5 @@ function deleteTask(task)
     const liToDelite = task.closest('li');
 
     task.closest('ul').removeChild(liToDelite);
-
-
 }
 

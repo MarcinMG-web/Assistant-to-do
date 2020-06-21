@@ -1,73 +1,73 @@
-html, body 
-{
-    height: 100%;
-}
-
-body
-{
-    color:black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+    box-sizing: border-box;
+  }
+  
+body {
     background: url(img/tlo.png);
     /* This patern from www.subtlepatterns.com  */
+    color: #fff;
     font-family: 'Lato', sans-serif;
-}
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 19px;
+  } 
+    
+*/
 
 /* App container*/
 
-.app-container 
-{    
+.app-container {  
     width: 500px;
     padding: 25px;
+    margin-top: 30px;
     text-align: center;
-    background-color: rgb(255,255,255, 0.7);
-    box-shadow: 0 0 62px rgb(0 ,0, 0.1);
-    border-radius: 15px;
 }
 
-.rectangle
-{   
+.rectangle{   
     margin-right: 20px;
     width: 500px;
-    height: 335px;
+    height: 100px;
     padding: 25px;
     text-align: center;
-    background-color: rgb(255,255,255, 0.7);
-    box-shadow: 0 0 62px rgb(0 ,0, 0.1);
-    border-radius: 15px;
     font-weight: 800;    
 } 
 
-#timer
-{
-    margin-top: 143px;
+#timer{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 55px;
 }
 
-.app-container h3
-{
+.app-container {
     margin: 0 0 25px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-input[type = text]
-{
-    width: 360px;
+span{
+    color: red;
+}
+
+input[type = text]{
+    width: 365px;
+    height: 50px;
     background-color:#efefef;
-    color: #666;
+    color: #566;
     border: 2px solid #ddd;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 17px;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
     margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
 }
 
-input[type=text]:focus
-{
+input[type=text]:focus{
     -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
     -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
     box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
@@ -75,10 +75,11 @@ input[type=text]:focus
     color: #000000;
 }
 
-button[type=submit]
-{   
+button[type=submit]{   
+    width: 125px;
     min-width: 70px;
-    font-size: 15px;
+    height: 50px;
+    font-size: 16px;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
@@ -88,11 +89,18 @@ button[type=submit]
     background-color: #ebb513;
     color: black;
     cursor: pointer;
+    border: none;
 }
 
-button
-{   
-    min-width: 65px;
+button[type=submit]:active{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+}
+
+button{
+    min-width: 70px;
+    height: 50px;
     background-color: #efefef;
     font-size: 15px;
     padding: 10px;
@@ -102,28 +110,30 @@ button
     border: 2px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 
+button:active{
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+}
 
 /* New task */
 
-.new-task-container
-
-{
+.new-task-container{
     margin-bottom: 20px;
 }
 
 /* Tasks list */
 
-.tasks-container ul
-{
+.tasks-container ul{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.single-task
-{
+.single-task{
     margin-bottom: 12px;
 }
 

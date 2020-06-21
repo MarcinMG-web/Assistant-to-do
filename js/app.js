@@ -1,5 +1,5 @@
 // Variables
-const newTaskForm = document.querySelector('.new-task-container  form'); // zmienna dowoływania sie do formularza 
+const newTaskForm = document.querySelector('.new-task-container form'); 
 const tasksContainer = document.querySelector('.tasks-container ul');
 
 
